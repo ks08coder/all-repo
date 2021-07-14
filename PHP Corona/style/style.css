@@ -1,0 +1,172 @@
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+html{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*{
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Redressed', cursive;
+}
+
+body{
+	scroll-behavior: smooth;
+}
+
+.nav_style{
+	background-color: #a29bfe!important;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #fff!important;
+    border-radius: .25rem;
+}
+
+span.ivok{
+    border: 2px solid #fff!important;
+}
+
+.nav_style a{
+	color: #fff;
+}
+
+.main_header{
+	height: 450px;
+	width: 100%
+}
+
+.rightside h1{
+	font-size: 3rem!important;
+}
+
+@media (max-width: 600px){
+	.rightside h1{
+	font-size: 1rem;
+}
+}
+.rightside img.coronanim{
+	animation: coro 10s linear infinite;
+}
+
+@keyframes coro{
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.leftside img{
+	animation: heart 10s linear infinite;
+}
+
+@keyframes heart{
+	0%{
+		transform: scale(.75);
+	}
+
+	20%{
+		transform: scale(1);
+	}
+
+	40%{
+		transform: scale(.75);
+	}
+
+	60%{
+		transform: scale(1);
+	}
+
+	80%{
+		transform: scale(.50);
+	}
+
+	100%{
+		transform: scale(0);
+	}
+}
+
+.coronaupdate{
+	margin: 0 0 30px 0;
+}
+
+.coronaupdate h3{
+	color: #ff7675;
+}
+
+.coronaupdate h1{
+	text-align: center;
+	font-size: 2rem;
+}
+
+.coronaupdate h1 p{
+	font-size: 1rem;
+}
+
+.about{
+	background-color: #e6e6e6;
+	box-shadow: 0 5px 5px #999999;
+}
+
+footer{
+	background-color: #a29bfe!important;
+	margin-bottom: 0px;
+}
+footer p{
+	margin-bottom: 0px;
+	padding-bottom: 0px
+}
+
+.ksdf{
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 300px){
+	.ksdf p{
+		display: inline-block;
+		text-align: center;
+		justify-content: center;
+	}
+	.coronaupdate{
+		margin-top: 95px;
+	}
+	.main_header{
+		height: 700px;
+		text-align: center;
+	}
+	.section_header h1{
+		font-size: 1.5rem;
+	}
+	h1{
+		font-size: 1.5rem;
+	}
+
+	.rightside img.coronanim{
+    width: 101px;
+    height: 114px;
+	}
+
+	.main_header h1{
+		text-align: center;
+		padding: 0;
+		width: 100%;
+		font-size: 30px;
+	}
+	.ksup{
+		display: inline-block!important;
+
+	}
+}
+</style>

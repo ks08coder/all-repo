@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding: 100px;
+}
+
+.Banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(Banner.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.Banner h2 span{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.Banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: absolute;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sticky ul li a{
+    color: #111;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbx{
+    padding-right: 30px;
+}
+
+.contentbx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.services{
+    background: #111;
+}
+
+.white{
+    color: #fff;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesbx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.services .content .servicesbx:hover{
+    background: #2196f3;
+}
+
+.services .content .servicesbx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.services .content .servicesbx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 
+Work
+
+*/
+
+.work .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work .content .workbx{
+    width: 50%;
+    padding: 20px;
+}
+
+.work .content .workbx img{
+    max-width: 100%;
+}
+
+/* 
+Testimonials
+
+*/
+.testimonials{
+    background: #f7f7f7;
+}
+
+.testimonials .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials .content .testimonialbx{
+    max-width: calc(50% - 40px);
+    padding: 60px;
+    margin: 20px;
+    background: #2196f3;
+    transition: 0.5s;
+}
+
+.testimonials .content .testimonialbx:hover{
+    background: #37ace2;
+}
+
+.testimonials .content .testimonialbx p{
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonials .content .testimonialbx h3{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonials .content .testimonialbx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* 
+Contact
+
+*/
+
+.contact {
+    background: #111;
+}
+
+.formbx{
+    min-width: 60%;
+}
+
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formbx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbx form input,
+.formbx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formbx form textarea{
+    min-height: 200px;
+}
+
+.formbx form input::placeholder,
+.formbx form textarea::placeholder{
+    color: #999;
+}
+
+.formbx form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 0;
+}
+
+.contactInfo{
+    min-width: 40%;
+}
+
+.contactinfobx{
+    position: relative;
+}
+
+.contactinfobx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactinfobx .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.contactinfobx .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactinfobx .box .text h3{
+    font-weight: 300;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+
+/* 
+Footer
+
+*/
+
+footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 991px){
+    header,.sticky{
+        padding: 20px 50px;
+        background: #000;
+    }
+    .sticky.menu,.menu{
+        font-size: 20px;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+	background: linear-gradient(230deg, red 49%, blue 50%);
+        color: #000;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li a{
+        color: #111;
+        font-size: 25px;
+        margin: 10px;
+    }
+    .sticky .logo{
+        color: #fff!important;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header.sticky.toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .Banner{
+        padding: 150px 50px 100px;
+    }
+    .Banner h2{
+        font-size: 1.5em;
+    }
+    .Banner h3{
+        font-size: 1em;
+    }
+    .contentbx h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .work .content .workbx{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonials .content .testimonialbx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .contactInfo{
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px){
+    header,.sticky{
+        padding: 20px 20px;
+    }
+    .Banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+}

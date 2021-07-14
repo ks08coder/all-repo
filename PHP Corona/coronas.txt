@@ -1,0 +1,45 @@
+{
+"articles": [
+{
+
+{
+name :; 
+Email :dfg@wefg.ffds; 
+Phone :213567; 
+Cold :; 
+Fever :; 
+Difficulty in Breathing :Breathing; 
+Feeling Weak :; 
+Message :dsfsg; 
+}
+},
+}{ 
+name :kshitiz; 
+Email :sii@jk.dfs; 
+Phone :35678975; 
+Cold :; 
+Fever :; 
+Difficulty in Breathing :; 
+Feeling Weak :; 
+Message :hi; 
+},
+{ 
+name :gref; 
+Email :hj@hj.gr; 
+765635; 
+Symptoms :; 
+Symptoms :; 
+Symptoms :Breathing; 
+Symptoms :; 
+Message :hi; 
+},
+{ 
+name :fghj; 
+Email :cgvbm@ghj.dfd; 
+Phone<div cl='j' :23567; 
+Symptoms :; 
+Symptoms :; 
+Symptoms :Breathing; 
+Symptoms :; 
+Message :hfdgfd; 
+},

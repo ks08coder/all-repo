@@ -1,0 +1,67 @@
+<html>
+ <head>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <style>
+   body{
+    background:linear-gradient(to right,#dd5e89,#f7bb97);
+    font-family: 'Merriweather', serif;
+}
+h1{
+ text-align:center;
+}
+label{
+ font-size:30px;
+}
+#form{
+ border: 1px solid black;
+}
+input{
+ width:100%;
+ padding:12px 20px;
+ box-sizing:border-box;
+ border:2px solid blue;
+ border-radius:5px;
+ resize:vertical;
+}
+#chec{
+ font-family:'Merriweather', serif;
+ font-size:20px;
+}
+@media screen and (max-width:600px){
+ input,body!{
+  width:100%;
+ }
+}
+
+
+   </style>
+  
+  </head>
+  <body>
+   <h1>SIMPLE INTEREST CALCULATOR</h1>
+   <div id ="form>"
+        <div><label for="prin">Principle Amount</label><br><input type="number" placeholder="ENTER PRINCIPLE AMOUNT" id="prin">
+    <br><br></div>
+             <label for="time">Time</label><br><input type="number" placeholder="ENTER TIME IN YEARS" id="time">
+     <br><br>
+      <label for="inte">Interest Rate</label><br><input type="number" placeholder="ENTER ANNUAL INTEREST RATE (in%)" id="inte">
+      <br><br>
+       <input type="button" value="CHECK NOW" id="chec" onclick="ccfunc()">
+        <br><br>
+<input type="text" id="resu" placeholder="AMOUNT TO BE PAID">
+        </div>
+           </body>
+           <script>
+            function ccfunc(){
+                 var pri = document.getElementById('prin').value;
+             var tim = document.getElementById('time').value;
+             var int = document.getElementById('inte').value;
+             var ab = 1 + parseFloat(int/100);
+                 var cd = Math.pow (ab,tim);
+                          var loan = pri * cd;
+              /*loan = pri * Math.pow((1 + int) , tim);*/
+          var loan2 = Math.round(loan);
+             document.getElementById('resu').value=loan2;
+            }
+            </script>
+</html>

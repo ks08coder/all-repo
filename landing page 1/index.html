@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KS Creations</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+  var password; 
+  password=prompt('Enter password to view page','');
+  if (password=="hty"){
+    
+    alert('You are welcome')
+    document.getElementsByClassName("git").style.display="block"
+  } else {
+    alert('wrong');
+    document.getElementsByClassName("git").style.display="none";
+   
+  }
+  </script>
+<style type="text/css">
+  .git{
+    display: contents;
+  }
+  
+	.Home{
+		background-color: #fff;
+		color: #000;
+
+	}
+	.dropdown {
+  float:right;
+  overflow: hidden;
+}
+.dropdown:hover{
+	background-color: #000;
+}
+a:hover, .dropdown:hover .dropbtn {
+  background-color: #fff;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 500%;
+  padding: 15px 5px;
+  z-index: 1;
+  border-left: 2px solid #fff;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 15px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-left: 2px solid red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 0px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+</style>
+<body>
+  <div class="git"><header>
+<div id="main">
+		<ul>
+			<li><a href="" class="Home"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Home</a></li>
+			<li><div class="dropdown">
+    <button class="dropbtn"><a href="#" class="se">More</a> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Webs</a>
+      <a href="#">Games</a>
+      <a href="#">Sketches</a>
+    </div>
+  </div> 
+				
+			</li>
+			<li><a href="#" >About</a></li>
+			<li><a href="#" >help</a></li>
+			<li><a href="contact/contact.html" ><i class="fa fa-phone" style="font-size:20px;color:#000"></i>&nbsp; Contact </a></li>
+		</ul>
+	</div>
+	<div class="title">
+		<h1>KS Creations</h1>
+	</div>
+	<div class="btn">
+		<a href="#" class="nn">Explore</a>&nbsp;  &nbsp; &nbsp; 
+		<a href="#" class="nn">What's new</a>
+	</div>
+	
+</header>
+</div>
+</div class="git">
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+
+
+</body> 
+
+</html>
